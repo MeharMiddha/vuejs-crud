@@ -5,7 +5,7 @@ import TodoList from "./TodoList.vue";
 </script>
 
 <template>
-    <div class="flex flex-col w-full h-full justify-center items-center gap-4">
+    <div class="bg-gray-100 flex flex-col w-full h-full min-h-screen justify-center items-center gap-4">
         <p class="text-2xl">CRUD Operations - TODO</p>
         <TodoInput />
         <TodoList />

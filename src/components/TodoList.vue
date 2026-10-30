@@ -6,10 +6,10 @@ const { listItems, handleDeleteItem, toggleEditMode } = useTodos();
 </script>
 
 <template>
-  <div class="bg-gray-100 flex flex-1 w-full h-full p-4">
+  <div class="flex flex-1 w-[80%] h-full p-4 rounded-xl">
     <ul class="w-full flex gap-3 flex-col">
       <li
-        class="text-xl capitalize flex justify-between w-full bg-white p-2 rounded-lg"
+        class="text-xl capitalize flex justify-between w-full bg-white p-2 rounded-lg border border-blue-400 break-all gap-2"
         v-for="item in listItems"
         :key="item.id"
       >
