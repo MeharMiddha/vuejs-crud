@@ -1,5 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './style.css'
+import Toast from 'vue-toastification';
+import 'vue-toastification/dist/index.css';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(Toast, {
+  position: 'top-right',
+  timeout: 1000,
+  closeOnClick: true
+});
+
+
+app.mount('#app');
